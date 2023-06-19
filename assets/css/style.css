@@ -67,16 +67,93 @@ header {
   font-weight: 600;
   font-family: "Jost" sans-serif;
 }
-
 /* end kabumi */
 
+/* promo */
+.promo h2 {
+  font-family: 'Jost' sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+.promo .promo-wrap {
+  font-family: "Jost" sans-serif;
+  background-color: #7a8656;
+  position: relative;
+  height: auto;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.promo .promo-wrap::before {
+  content: "";
+  position: absolute;
+  background-color: #d1bc92;
+  width: 150px;
+  height: 150px;
+  border-radius: 20% 11% 36% 100% / 25% 5% 15% 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.promo .promo-wrap p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffe10e;
+  margin-bottom: 0;
+}
+.promo .promo-wrap h1 {
+  font-weight: 600;
+}
+
+.promo .promo-wrap img {
+  position: relative;
+  z-index: 4;
+}
+
+/* end promo */
+/* produk */
+.produk .card{
+  background-color: #d1bc92;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.produk .card .card-title{
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.produk .card .card-text{
+  font-family: "Heebo" sans-serif;
+  color: #7a8656;
+  font-weight: 500;
+}
+/* end produk */
+/* footer */
+.footer{
+  background-color: #7a8656;
+  width: 100%;
+  height: auto;
+  color: #fff;
+  padding: 40px 0;
+  font-family: "Heebo" sans-serif;
+}
+.footer h1{
+  font-family: "Jost" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+/* end footer */
 /* hp */
 @media screen and (max-width: 768px) {
   .mobile-hide {
     display: none;
   }
   .hero {
-    height: 70vh;
+    height: 500px;
   }
   .kabumi {
     border-radius: 30px 30px 0 0;
@@ -88,7 +165,16 @@ header {
     display: none;
   }
   .hero {
-    height: 90vh;
+    height: 95vh;
+  }
+  .hero h1 {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 60px;
+  }
+  .hero p {
+    font-weight: 400;
+    font-size: 16px;
   }
 }
 
